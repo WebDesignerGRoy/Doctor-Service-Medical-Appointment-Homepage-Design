@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MediCare - Find trusted doctors and book healthcare appointments online.">
+  <title>MediCare — Expert Care. When You Need It.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+
+      <a href="#" class="logo">
+        <span class="logo-icon">
+          <i class="fa-solid fa-plus"></i>
+        </span>
+        <span>Medi<span>Care</span></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#doctors">Find a Doctor</a>
+        <a href="#services">Services</a>
+        <a href="#specialties">Specialties</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn search-toggle" aria-label="Open search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <a href="#" class="sign-in">Sign In</a>
+        <a href="#appointment" class="btn btn-primary nav-cta">Book Appointment</a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- ================= HERO ================= -->
+  <main>
+
+    <section class="hero">
+      <div class="hero-decoration hero-circle-one"></div>
+      <div class="hero-decoration hero-circle-two"></div>
+
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+
+          <div class="eyebrow">
+            <span class="pulse-dot"></span>
+            Trusted Healthcare Professionals
+          </div>
+
+          <h1>
+            Expert Care.
+            <span>When You Need It.</span>
+          </h1>
+
+          <p class="hero-text">
+            Connect with experienced doctors and healthcare specialists,
+            book appointments, and get the care you deserve — all in one place.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#doctors" class="btn btn-primary btn-large">
+              Find a Doctor
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="#services" class="btn btn-outline btn-large">
+              Explore Services
+            </a>
+          </div>
+
+          <div class="hero-stats">
+
+            <div class="hero-stat">
+              <strong>500+</strong>
+              <span>Doctors</span>
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <div class="hero-stat">
+              <strong>25+</strong>
+              <span>Specialties</span>
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <div class="hero-stat">
+              <strong>50K+</strong>
+              <span>Patients</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Doctor Visual -->
+        <div class="hero-visual">
+
+          <div class="hero-image-wrapper">
+
+            <div class="image-glow"></div>
+
+            <div class="doctor-image">
+              <img
+                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=1000&q=85"
+                alt="Professional female doctor">
+            </div>
+
+            <div class="doctor-pattern"></div>
+
+          </div>
+
+          <!-- Floating card -->
+          <div class="floating-card availability-card">
+            <div class="floating-icon green">
+              <i class="fa-solid fa-calendar-check"></i>
+            </div>
+            <div>
+              <strong>Available Today</strong>
+              <span>Book your appointment</span>
+            </div>
+          </div>
+
+          <div class="floating-card rating-card">
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <strong>4.9/5</strong>
+            <span>Patient Rating</span>
+          </div>
+
+          <div class="verified-card">
+            <span class="verified-icon">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <div>
+              <strong>Verified Doctor</strong>
+              <small>Professional credentials verified</small>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= SEARCH ================= -->
+    <section class="search-section">
+      <div class="container">
+
+        <div class="search-box">
+
+          <div class="search-heading">
+            <span class="search-heading-icon">
+              <i class="fa-solid fa-stethoscope"></i>
+            </span>
+
+            <div>
+              <h2>Find the right doctor for you</h2>
+              <p>Search by doctor, specialty or location</p>
+            </div>
+          </div>
+
+          <form class="doctor-search" id="doctorSearch">
+
+            <div class="search-field">
+              <i class="fa-solid fa-user-doctor"></i>
+              <div>
+                <label for="doctorKeyword">Doctor or Keyword</label>
+                <input
+                  id="doctorKeyword"
+                  type="text"
+                  placeholder="e.g. Dr. Sarah">
+              </div>
+            </div>
+
+            <div class="search-field">
+              <i class="fa-solid fa-heart-pulse"></i>
+              <div>
+                <label for="specialtySelect">Specialty</label>
+                <select id="specialtySelect">
+                  <option value="">All Specialties</option>
+                  <option value="Cardiology">Cardiology</option>
+                  <option value="Dermatology">Dermatology</option>
+                  <option value="Neurology">Neurology</option>
+                  <option value="Pediatrics">Pediatrics</option>
+                  <option value="Orthopedics">Orthopedics</option>
+                  <option value="Dentistry">Dentistry</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="search-field">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <label for="locationInput">Location</label>
+                <input
+                  id="locationInput"
+                  type="text"
+                  placeholder="City or ZIP code">
+              </div>
+            </div>
+
+            <button type="submit" class="search-button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              Search Doctors
+            </button>
+
+          </form>
+
+          <div class="search-result" id="searchResult"></div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= SPECIALTIES ================= -->
+    <section class="section specialties-section" id="specialties">
+      <div class="container">
+
+        <div class="section-header">
+          <div>
+            <span class="section-label">SPECIALTIES</span>
+            <h2>Explore Medical Specialties</h2>
+          </div>
+
+          <p>
+            Find specialized care from experienced healthcare professionals.
+          </p>
+        </div>
+
+
+        <div class="specialty-grid">
+
+          <a href="#" class="specialty-card">
+            <div class="specialty-icon blue">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <h3>Cardiology</h3>
+            <p>Heart and cardiovascular care</p>
+            <span class="card-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+
+          <a href="#" class="specialty-card">
+            <div class="specialty-icon purple">
+              <i class="fa-solid fa-hand-dots"></i>
+            </div>
+            <h3>Dermatology</h3>
+            <p>Skin, hair and nail health</p>
+            <span class="card-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+
+          <a href="#" class="specialty-card">
+            <div class="specialty-icon orange">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3>Neurology</h3>
+            <p>Brain and nervous system</p>
+            <span class="card-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+
+          <a href="#" class="specialty-card">
+            <div class="specialty-icon green">
+              <i class="fa-solid fa-child"></i>
+            </div>
+            <h3>Pediatrics</h3>
+            <p>Healthcare for children</p>
+            <span class="card-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+
+          <a href="#" class="specialty-card">
+            <div class="specialty-icon cyan">
+              <i class="fa-solid fa-bone"></i>
+            </div>
+            <h3>Orthopedics</h3>
+            <p>Bone and joint treatment</p>
+            <span class="card-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+
+          <a href="#" class="specialty-card">
+            <div class="specialty-icon pink">
+              <i class="fa-solid fa-tooth"></i>
+            </div>
+            <h3>Dentistry</h3>
+            <p>Complete dental care</p>
+            <span class="card-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+
+          <a href="#" class="specialty-card">
+            <div class="specialty-icon teal">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <h3>Ophthalmology</h3>
+            <p>Eye and vision care</p>
+            <span class="card-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+
+          <a href="#" class="specialty-card">
+            <div class="specialty-icon navy">
+              <i class="fa-solid fa-user-doctor"></i>
+            </div>
+            <h3>General Medicine</h3>
+            <p>Everyday health concerns</p>
+            <span class="card-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= DOCTORS ================= -->
+    <section class="section doctors-section" id="doctors">
+      <div class="container">
+
+        <div class="section-header">
+          <div>
+            <span class="section-label">OUR SPECIALISTS</span>
+            <h2>Meet Our Specialists</h2>
+          </div>
+
+          <a href="#" class="text-link">
+            View all doctors
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+
+        <div class="doctor-grid">
+
+          <!-- Doctor 1 -->
+          <article class="doctor-card">
+            <div class="doctor-card-image">
+              <img
+                src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=700&q=85"
+                alt="Dr. James Wilson">
+
+              <span class="doctor-verified">
+                <i class="fa-solid fa-check"></i>
+              </span>
+
+              <span class="available-badge">
+                Available Today
+              </span>
+            </div>
+
+            <div class="doctor-card-content">
+              <h3>Dr. James Wilson</h3>
+              <p class="doctor-specialty">Cardiologist</p>
+
+              <div class="doctor-rating">
+                <i class="fa-solid fa-star"></i>
+                <strong>4.9</strong>
+                <span>(124 reviews)</span>
+              </div>
+
+              <div class="doctor-info">
+                <span>
+                  <i class="fa-solid fa-briefcase"></i>
+                  15 years experience
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-location-dot"></i>
+                  New York, NY
+                </span>
+              </div>
+
+              <div class="doctor-actions">
+                <a href="#" class="profile-btn">View Profile</a>
+                <a href="#appointment" class="book-btn">Book</a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- Doctor 2 -->
+          <article class="doctor-card">
+            <div class="doctor-card-image">
+              <img
+                src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=700&q=85"
+                alt="Dr. Emily Carter">
+
+              <span class="doctor-verified">
+                <i class="fa-solid fa-check"></i>
+              </span>
+
+              <span class="available-badge">
+                Available Today
+              </span>
+            </div>
+
+            <div class="doctor-card-content">
+              <h3>Dr. Emily Carter</h3>
+              <p class="doctor-specialty">Dermatologist</p>
+
+              <div class="doctor-rating">
+                <i class="fa-solid fa-star"></i>
+                <strong>4.8</strong>
+                <span>(98 reviews)</span>
+              </div>
+
+              <div class="doctor-info">
+                <span>
+                  <i class="fa-solid fa-briefcase"></i>
+                  12 years experience
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Boston, MA
+                </span>
+              </div>
+
+              <div class="doctor-actions">
+                <a href="#" class="profile-btn">View Profile</a>
+                <a href="#appointment" class="book-btn">Book</a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- Doctor 3 -->
+          <article class="doctor-card">
+            <div class="doctor-card-image">
+              <img
+                src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=700&q=85"
+                alt="Dr. Michael Lee">
+
+              <span class="doctor-verified">
+                <i class="fa-solid fa-check"></i>
+              </span>
+
+              <span class="available-badge">
+                Available Tomorrow
+              </span>
+            </div>
+
+            <div class="doctor-card-content">
+              <h3>Dr. Michael Lee</h3>
+              <p class="doctor-specialty">Neurologist</p>
+
+              <div class="doctor-rating">
+                <i class="fa-solid fa-star"></i>
+                <strong>4.9</strong>
+                <span>(156 reviews)</span>
+              </div>
+
+              <div class="doctor-info">
+                <span>
+                  <i class="fa-solid fa-briefcase"></i>
+                  18 years experience
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Chicago, IL
+                </span>
+              </div>
+
+              <div class="doctor-actions">
+                <a href="#" class="profile-btn">View Profile</a>
+                <a href="#appointment" class="book-btn">Book</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+    <section class="section services-section" id="services">
+      <div class="container">
+
+        <div class="services-heading">
+          <span class="section-label">OUR SERVICES</span>
+          <h2>Healthcare Made Simple</h2>
+          <p>
+            Everything you need to manage your healthcare journey,
+            conveniently in one place.
+          </p>
+        </div>
+
+
+        <div class="service-grid">
+
+          <div class="service-card service-featured">
+            <div class="service-number">01</div>
+            <div class="service-icon">
+              <i class="fa-solid fa-video"></i>
+            </div>
+
+            <h3>Online Consultation</h3>
+
+            <p>
+              Connect with healthcare professionals from the comfort
+              of your home through secure video consultations.
+            </p>
+
+            <a href="#">
+              Start Consultation
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+
+          <div class="service-card">
+            <div class="service-number">02</div>
+            <div class="service-icon">
+              <i class="fa-solid fa-calendar-check"></i>
+            </div>
+
+            <h3>In-Person Appointment</h3>
+
+            <p>
+              Find a nearby doctor and book a convenient appointment
+              at your preferred clinic.
+            </p>
+
+            <a href="#">
+              Book Appointment
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+
+          <div class="service-card">
+            <div class="service-number">03</div>
+            <div class="service-icon">
+              <i class="fa-solid fa-flask-vial"></i>
+            </div>
+
+            <h3>Lab & Diagnostic</h3>
+
+            <p>
+              Access trusted diagnostic services and keep your
+              healthcare information organized.
+            </p>
+
+            <a href="#">
+              Explore Services
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+
+          <div class="service-card">
+            <div class="service-number">04</div>
+            <div class="service-icon">
+              <i class="fa-solid fa-prescription-bottle-medical"></i>
+            </div>
+
+            <h3>Prescription Support</h3>
+
+            <p>
+              Keep track of prescriptions and receive guidance
+              from qualified healthcare professionals.
+            </p>
+
+            <a href="#">
+              Learn More
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= HOW IT WORKS ================= -->
+    <section class="section process-section">
+      <div class="container">
+
+        <div class="section-header centered">
+          <div>
+            <span class="section-label">HOW IT WORKS</span>
+            <h2>Healthcare in Three Simple Steps</h2>
+          </div>
+        </div>
+
+
+        <div class="process-grid">
+
+          <div class="process-item">
+            <div class="process-icon">
+              <span>01</span>
+              <i class="fa-solid fa-user-doctor"></i>
+            </div>
+
+            <h3>Find a Doctor</h3>
+            <p>
+              Search by specialty, location, availability or doctor name.
+            </p>
+          </div>
+
+          <div class="process-line"></div>
+
+          <div class="process-item">
+            <div class="process-icon">
+              <span>02</span>
+              <i class="fa-solid fa-calendar-days"></i>
+            </div>
+
+            <h3>Book Your Appointment</h3>
+            <p>
+              Select a convenient date and time that works for you.
+            </p>
+          </div>
+
+          <div class="process-line"></div>
+
+          <div class="process-item">
+            <div class="process-icon">
+              <span>03</span>
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+
+            <h3>Get Expert Care</h3>
+            <p>
+              Meet your doctor and receive personalized healthcare.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+
+        <div class="about-visual">
+
+          <div class="about-image-main">
+            <img
+              src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1000&q=85"
+              alt="Healthcare professional">
+          </div>
+
+          <div class="about-experience">
+            <strong>15+</strong>
+            <span>Years of<br>Healthcare Excellence</span>
+          </div>
+
+          <div class="about-pattern"></div>
+
+        </div>
+
+
+        <div class="about-content">
+
+          <span class="section-label">WHY MEDICARE</span>
+
+          <h2>
+            Healthcare You
+            <span>Can Trust</span>
+          </h2>
+
+          <p class="about-intro">
+            We make finding and accessing quality healthcare easier,
+            more transparent and more convenient.
+          </p>
+
+          <div class="benefit-list">
+
+            <div class="benefit">
+              <span class="benefit-icon">
+                <i class="fa-solid fa-user-check"></i>
+              </span>
+              <div>
+                <h3>Verified Medical Professionals</h3>
+                <p>Qualified healthcare professionals with verified credentials.</p>
+              </div>
+            </div>
+
+            <div class="benefit">
+              <span class="benefit-icon">
+                <i class="fa-solid fa-calendar-check"></i>
+              </span>
+              <div>
+                <h3>Easy Online Booking</h3>
+                <p>Find an appointment that fits your schedule.</p>
+              </div>
+            </div>
+
+            <div class="benefit">
+              <span class="benefit-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+              </span>
+              <div>
+                <h3>Secure Patient Experience</h3>
+                <p>Your healthcare journey is designed with privacy in mind.</p>
+              </div>
+            </div>
+
+            <div class="benefit">
+              <span class="benefit-icon">
+                <i class="fa-solid fa-heart"></i>
+              </span>
+              <div>
+                <h3>Personalized Care</h3>
+                <p>Healthcare options designed around your individual needs.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <a href="#" class="btn btn-primary">
+            Learn More About Us
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="section testimonial-section">
+      <div class="container">
+
+        <div class="section-header">
+          <div>
+            <span class="section-label">PATIENT STORIES</span>
+            <h2>What Our Patients Say</h2>
+          </div>
+
+          <div class="slider-controls">
+            <button class="slider-btn" id="prevTestimonial">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <button class="slider-btn active" id="nextTestimonial">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+
+        <div class="testimonial-wrapper">
+
+          <div class="testimonial-track" id="testimonialTrack">
+
+            <article class="testimonial-card">
+              <div class="quote-icon">
+                <i class="fa-solid fa-quote-left"></i>
+              </div>
+
+              <div class="testimonial-rating">
+                ★★★★★
+              </div>
+
+              <p>
+                "Finding a specialist used to be stressful. MediCare made
+                the entire process simple, quick and transparent."
+              </p>
+
+              <div class="patient">
+                <img
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80"
+                  alt="Sarah Johnson">
+
+                <div>
+                  <strong>Sarah Johnson</strong>
+                  <span>New York, NY</span>
+                </div>
+              </div>
+            </article>
+
+
+            <article class="testimonial-card">
+              <div class="quote-icon">
+                <i class="fa-solid fa-quote-left"></i>
+              </div>
+
+              <div class="testimonial-rating">
+                ★★★★★
+              </div>
+
+              <p>
+                "I was able to find a highly qualified doctor and book
+                an appointment within minutes. The experience was excellent."
+              </p>
+
+              <div class="patient">
+                <img
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80"
+                  alt="David Miller">
+
+                <div>
+                  <strong>David Miller</strong>
+                  <span>Boston, MA</span>
+                </div>
+              </div>
+            </article>
+
+
+            <article class="testimonial-card">
+              <div class="quote-icon">
+                <i class="fa-solid fa-quote-left"></i>
+              </div>
+
+              <div class="testimonial-rating">
+                ★★★★★
+              </div>
+
+              <p>
+                "The platform is clean, easy to navigate and helped me
+                find exactly the type of care I needed."
+              </p>
+
+              <div class="patient">
+                <img
+                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80"
+                  alt="Emily Davis">
+
+                <div>
+                  <strong>Emily Davis</strong>
+                  <span>Chicago, IL</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+    <section class="cta-section" id="appointment">
+      <div class="cta-orb orb-one"></div>
+      <div class="cta-orb orb-two"></div>
+
+      <div class="container cta-content">
+
+        <div>
+          <span class="cta-label">YOUR HEALTH MATTERS</span>
+
+          <h2>
+            Your Health Deserves
+            <span>the Best Care.</span>
+          </h2>
+
+          <p>
+            Find a trusted healthcare professional and book your
+            appointment today.
+          </p>
+        </div>
+
+        <div class="cta-buttons">
+          <a href="#doctors" class="btn btn-white">
+            Find a Doctor
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <a href="#services" class="btn btn-ghost-white">
+            Explore Services
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer" id="contact">
+
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo footer-logo">
+          <span class="logo-icon">
+            <i class="fa-solid fa-plus"></i>
+          </span>
+          <span>Medi<span>Care</span></span>
+        </a>
+
+        <p>
+          Making quality healthcare more accessible,
+          convenient and connected.
+        </p>
+
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a href="#" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="#" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <a href="#" aria-label="Twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </div>
+
+      </div>
+
+
+      <div class="footer-column">
+        <h3>Company</h3>
+        <a href="#about">About Us</a>
+        <a href="#doctors">Our Doctors</a>
+        <a href="#">Careers</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+
+      <div class="footer-column">
+        <h3>Services</h3>
+        <a href="#doctors">Find a Doctor</a>
+        <a href="#services">Online Consultation</a>
+        <a href="#appointment">Appointments</a>
+        <a href="#services">Medical Services</a>
+      </div>
+
+
+      <div class="footer-column">
+        <h3>Support</h3>
+        <a href="#">Help Center</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Patient Support</a>
+      </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+      <p>© 2026 MediCare. All rights reserved.</p>
+
+      <div>
+        <span>Designe By G.Roy</span>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <!-- Toast -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMessage">Search completed.</span>
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
